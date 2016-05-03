@@ -1,0 +1,34 @@
+{
+    "name": "heavenproject/git-branch-panel",
+    "description": "Displays current Git branch on Tracy debug panel",
+    "keywords": [
+        "git",
+        "git branch",
+        "git panel",
+        "git branch panel"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/CSHH/git-branch-panel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Community of volunteers"
+        }
+    ],
+    "require": {
+        "nette/di": "~2.3.0",
+        "tracy/tracy": "~2.3.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "~0.9.0",
+        "nette/application": "~2.3.0",
+        "nette/bootstrap": "~2.3.0",
+        "nette/tester": "*",
+        "php-mock/php-mock-mockery": "~1.1.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    }
+}
