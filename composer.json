@@ -16,13 +16,13 @@
         }
     ],
     "require": {
-        "nette/di": "~2.3.0",
-        "tracy/tracy": "~2.3.0"
+        "nette/di": "^2.3",
+        "tracy/tracy": "^2.3"
     },
     "require-dev": {
         "mockery/mockery": "~0.9.0",
-        "nette/application": "~2.3.0",
-        "nette/bootstrap": "~2.3.0",
+        "nette/application": "^2.3",
+        "nette/bootstrap": "^2.3",
         "nette/tester": "*",
         "php-mock/php-mock-mockery": "~1.1.0"
     },
