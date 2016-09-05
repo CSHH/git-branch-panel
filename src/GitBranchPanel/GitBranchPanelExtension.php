@@ -9,12 +9,20 @@ use Nette;
  */
 class GitBranchPanelExtension extends Nette\DI\CompilerExtension
 {
+    public function loadConfiguration()
+    {
+        $config = $this->getConfig();
+        $config['entryPath'] = isset($config['entryPath']) ? $config['entryPath'] : $_SERVER['SCRIPT_FILENAME'];
+        $this->setConfig($config);
+    }
+
     public function afterCompile(Nette\PhpGenerator\ClassType $class)
     {
         $initialize = $class->getMethod('initialize');
         $builder = $this->getContainerBuilder();
 
-        $statement = new Nette\DI\Statement('HeavenProject\GitBranchPanel\Panel', array($_SERVER['SCRIPT_FILENAME'], '.git'));
+        $config = $this->getConfig();
+        $statement = new Nette\DI\Statement('HeavenProject\GitBranchPanel\Panel', array($config['entryPath'], '.git'));
 
         $initialize->addBody($builder->formatPhp(
             '$this->getService(?)->addPanel(?);',
