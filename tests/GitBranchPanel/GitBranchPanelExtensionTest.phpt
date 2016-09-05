@@ -8,6 +8,9 @@ use Nette;
 
 require __DIR__ . '/../bootstrap.php';
 
+/**
+ * @testCase
+ */
 class GitBranchPanelExtensionTest extends Tester\TestCase
 {
     public function testGeneratedContainer()

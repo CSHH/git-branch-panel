@@ -8,6 +8,9 @@ use HeavenProject\GitBranchPanel\Panel;
 
 require __DIR__ . '/../bootstrap.php';
 
+/**
+ * @testCase
+ */
 class PanelTest extends Tester\TestCase
 {
     public function testGetTabAsExistingBranch()
