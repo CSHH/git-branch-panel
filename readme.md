@@ -23,6 +23,17 @@ extensions:
     gitPanel: HeavenProject\GitBranchPanel\GitBranchPanelExtension
 ```
 
+The extension will search through all the parent directories for the `.git` directory and stops in the project root.
+
+You can set custom path to a directory, in which the `.git` directory resides, this way:
+
+```
+gitPanel:
+    entryPath: %appDir%/my/custom/path
+```
+
+If `appDir` is `/app`, the resulting path including the `.git` directory will be `/app/my/custom/path/.git`.
+
 ## License
 
 This source code is [free software](http://www.gnu.org/philosophy/free-sw.html)
