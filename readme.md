@@ -6,6 +6,10 @@ Displays current Git branch on Tracy debug panel.
 see [here](http://addons.nette.org/vojtech-vondra/gitbranch-debug-panel)
 and [here](https://gist.github.com/vvondra/3645108).
 
+## Installation
+
+`composer require --dev heavenproject/git-branch-panel`
+
 ## Requirements
 
 - [Nette Framework](https://github.com/nette/nette)
