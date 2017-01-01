@@ -1,0 +1,5 @@
+includes:
+    - config.neon
+
+gitBranch:
+    entryPath: %appDir%

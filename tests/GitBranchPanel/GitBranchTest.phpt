@@ -10,6 +10,9 @@ use HeavenProject\GitBranchPanel\GitBranch;
 
 require __DIR__ . '/../bootstrap.php';
 
+/**
+ * @testCase
+ */
 class GitBranchTest extends Tester\TestCase
 {
     protected function tearDown()
